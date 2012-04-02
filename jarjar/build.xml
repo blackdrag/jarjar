@@ -46,7 +46,7 @@
             <copy todir="build/@{module}">
                 <fileset dir="src/@{module}" excludes="**/*.java"/>
             </copy>
-            <javac includeantruntime="false" srcdir="src/@{module}" destdir="build/@{module}"
+            <javac includeantruntime="true" srcdir="src/@{module}" destdir="build/@{module}"
               source="${compile.source}"
               target="${compile.target}" bootclasspath="@{bootclasspath}" extdirs="${compile.extdirs}"
               debug="${compile.debug}" optimize="${compile.optimize}" deprecation="${compile.deprecation}">
